@@ -3,9 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test</title>
+    <title>Auto-redirect</title>
 </head>
 <body>
-    <a href="https://www.google.com">click this for goog</a>
+    <p>Oops, you tried to access FaceBook, that's not allowed!</p>
+    <p>This page will automatically redirect to Google in 5 seconds.<br><br></p>
+    <a href="https://www.google.com">Click this link to continue to google.</a>
+
+    <script>
+        window.setTimeout(function() {
+
+        // Move to a new location or you can do something else
+        window.location.href = "https://www.google.com";
+
+        }, 5000);
+    </script>
 </body>
 </html>
